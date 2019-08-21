@@ -1,0 +1,14 @@
+<h1>These are my favs.</h1>
+
+
+<ul>
+  <% results.forEach(e => { %>
+  <li>
+    <a href="/favorites/<%= e.city %>"><%= e.city %></a>
+
+    <form method="POST" action="/favorites/<%= e.id %>?_method=DELETE">
+      <button type="submit">Delete Me</button>
+    </form>
+  </li>
+  <% }); %>
+</ul>

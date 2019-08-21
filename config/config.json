@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "&sppMA6@yTBY%0C",
+    "database": "mapbox_poc",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

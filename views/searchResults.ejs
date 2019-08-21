@@ -1,0 +1,14 @@
+<h1>Search Results</h1>
+<p>Lat: <%= lat %></p>
+<p>long: <%= long %></p>
+<p>City: <%= city %></p>
+<p>State: <%= state %></p>
+
+
+<form method="POST" action="/favorites">
+  <input type="hidden" name="city" value="<%= city %>">
+  <input type="hidden" name="state" value="<%= state %>">
+  <input type="hidden" name="lat" value="<%= lat %>">
+  <input type="hidden" name="long" value="<%= long %>">
+  <button type="submit">Add to Favs</button>
+</form>
