@@ -21,6 +21,7 @@ app.use(layouts);
 app.use(methodOverride('_method'));
 app.use('/', express.static('static'));
 
+
 app.use('/api', require('./controllers/api'));
 
 // display the city search view
