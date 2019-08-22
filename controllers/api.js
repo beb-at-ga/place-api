@@ -19,7 +19,6 @@ router.get('/favorites/:id', (req, res) => {
     })
 });
 
-// add selected city to fav
 router.put('/favorites/:id', (req, res) => {
   db.place.update(
     { 
@@ -39,7 +38,6 @@ router.put('/favorites/:id', (req, res) => {
 });
 
 
-// add selected city to fav
 router.post('/favorites', (req, res) => {
   // res.send(req.body);
   db.place.create(req.body)
@@ -50,7 +48,6 @@ router.post('/favorites', (req, res) => {
     });
 });
 
-// delete the city from the table
 router.delete('/favorites/:id', (req, res) => {
   db.place.destroy({
       where: {
@@ -58,7 +55,6 @@ router.delete('/favorites/:id', (req, res) => {
       }
     })
     .then((result) => {
-      // res.redirect('/favorites');
 
       let resJson = {
         result: 'DELETED'
