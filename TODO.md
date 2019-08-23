@@ -34,3 +34,9 @@
 
 - sequelize model:create --name place --attributes "city:string, state:string, lat:real, long:real"
 
+
+# This is a N:M Relationship in Sequelize
+- sequelize model:create --name category --attributes "name:string"
+- sequelize model:create --name categoriesProjects --attributes "categoryId:integer, projectId:integer"
+
+
